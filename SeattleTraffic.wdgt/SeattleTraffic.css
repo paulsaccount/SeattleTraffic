@@ -1,0 +1,10 @@
+body {
+	margin: 0;
+}
+
+#resize {
+    position:absolute;
+    right: 2px;
+    bottom: 2px;
+    -apple-dashboard-region: dashboard-region(control rectangle);
+}

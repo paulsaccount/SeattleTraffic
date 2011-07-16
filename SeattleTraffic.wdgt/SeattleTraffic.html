@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+<style>
+	@import "SeattleTraffic.css";
+</style>
+
+<script type='text/javascript' src='SeattleTraffic.js'></script>
+<script type='text/javascript' src='file:///System/Library/WidgetResources/button/genericButton.js' charset='utf-8'/>
+
+if (window.widget)
+{
+    widget.onshow = onshow;
+}
+
+</head>
+
+<body onload='loaded();'>
+    
+    <div id="front" onmousemove='mousemove(event);' onmouseout='mouseexit(event);' onclick='cycle(event);'>
+		
+		<img src="Default.png">
+		<img id='resize' src='/System/Library/WidgetResources/resize.png' onmousedown='mouseResizeDown(event);'/>
+		
+    </div>
+
+</body>
+
+</html>
